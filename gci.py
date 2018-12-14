@@ -46,7 +46,7 @@ def create_func(type='cpu-tiny'):
                 if  params.get('DISK') else ''
 
     cmd = '{GCI} create {INSTANCE_NAME} --preemptible --zone {ZONE} ' \
-          '--image=c1-deeplearning-pytorch-0-4-cu92-20180925 --image-project=ml-images ' \
+          '--image=c1-deeplearning-pytorch-1-0-cu100-20181210 --image-project=ml-images ' \
           '--boot-disk-size=30GB ' \
           ' '.format(**params)
     cmd = cmd + cpu_conf + gpu_conf + disk_conf
